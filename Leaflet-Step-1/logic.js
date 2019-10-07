@@ -89,19 +89,7 @@ function createMap(earthquakes) {
   // Create a layer control
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
-  }).addTo(myMap);
-
-  /* Add color codes for legend from: https://leafletjs.com/examples/choropleth/
-  function getColor(d) {
-    return d <= 1 ? '#99ff99' :
-    d <= 2 ? '#ddff99' :
-    d <= 3 ? '#ffff99' :
-    d <= 4 ? '#ffe680' :
-    d <= 5 ? '#ff751a' :
-    d > 5 ? '#ff0000' ;
-  }
-*/
-            
+  }).addTo(myMap);         
 
   // Create a legend
   var legend = L.control({position: 'bottomright'});
